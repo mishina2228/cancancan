@@ -73,6 +73,8 @@ jobs:
             ruby: 'jruby' # this *should* work - there's a test failure; it's not incompatible like the other excludes. could be an issue in Rails 5.0.2?
           - gemfile: 'gemfiles/activerecord_6.1.0.gemfile'
             ruby: 'jruby' # this *should* work. it seems like there's an issue with rails 6 on jruby.
+          - gemfile: 'gemfiles/activerecord_7.0.1.gemfile'
+            ruby: 'jruby' # rails 7+ requires ruby 2.7+; JRuby 9.3.x is compatible with Ruby 2.6.x
           - gemfile: 'gemfiles/activerecord_main.gemfile'
             ruby: 'jruby' # this *should* work. it seems like there's an issue with rails 6 on jruby.
 
